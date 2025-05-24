@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  bot:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      AWS_ACCESS_KEY_ID: your-access-key
+      AWS_SECRET_ACCESS_KEY: your-secret-key
+      AWS_REGION: us-west-2
+      TEAMS_BOT_TOKEN: your-teams-token
