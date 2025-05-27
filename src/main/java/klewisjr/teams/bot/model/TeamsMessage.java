@@ -1,4 +1,4 @@
-package com.company.bot.model;
+package klewisjr.teams.bot.model;
 
 import lombok.Builder;
 import lombok.Data;

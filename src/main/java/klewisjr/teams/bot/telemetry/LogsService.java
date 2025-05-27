@@ -1,4 +1,4 @@
-package com.company.bot.telemetry;
+package klewisjr.teams.bot.telemetry;
 
 import software.amazon.awssdk.services.cloudwatchlogs.CloudWatchLogsClient;
 import software.amazon.awssdk.services.cloudwatchlogs.model.*;

@@ -1,7 +1,7 @@
-package com.company.bot.client;
+package klewisjr.teams.bot.client;
 
-import com.company.bot.config.FeignConfig;
-import com.company.bot.model.TeamsMessage;
+import klewisjr.teams.bot.config.FeignConfig;
+import klewisjr.teams.bot.model.TeamsMessage;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestHeader;

@@ -1,4 +1,4 @@
-package com.company.bot.client;
+package klewisjr.teams.bot.client;
 
 import software.amazon.awssdk.core.SdkBytes;
 import software.amazon.awssdk.services.bedrockruntime.BedrockRuntimeClient;

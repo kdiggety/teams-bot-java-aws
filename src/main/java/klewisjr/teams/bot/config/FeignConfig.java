@@ -1,4 +1,4 @@
-package com.company.bot.config;
+package klewisjr.teams.bot.config;
 
 import feign.Logger;
 import feign.RequestInterceptor;

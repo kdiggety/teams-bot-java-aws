@@ -1,7 +1,7 @@
-package com.company.bot;
+package klewisjr.teams.bot;
 
-import com.company.bot.client.TeamsClient;
-import com.company.bot.model.TeamsMessage;
+import klewisjr.teams.bot.client.TeamsClient;
+import klewisjr.teams.bot.model.TeamsMessage;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

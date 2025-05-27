@@ -1,9 +1,9 @@
-package com.company.bot;
+package klewisjr.teams.bot;
 
-import com.company.bot.model.TeamsMessage;
-import com.company.bot.telemetry.CloudWatchService;
-import com.company.bot.telemetry.LogsService;
-import com.company.bot.client.BedrockClient;
+import klewisjr.teams.bot.model.TeamsMessage;
+import klewisjr.teams.bot.telemetry.CloudWatchService;
+import klewisjr.teams.bot.telemetry.LogsService;
+import klewisjr.teams.bot.client.BedrockClient;
 import org.springframework.stereotype.Service;
 
 @Service
