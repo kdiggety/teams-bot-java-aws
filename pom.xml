@@ -28,6 +28,7 @@
         </dependency>
 
         <!-- AWS SDK v2 -->
+<!--
         <dependency>
             <groupId>software.amazon.awssdk</groupId>
             <artifactId>cloudwatch</artifactId>
@@ -43,8 +44,10 @@
             <artifactId>bedrockruntime</artifactId>
             <version>${aws.sdk.version}</version>
         </dependency>
+-->
 
         <!-- Jackson for JSON handling -->
+<!--
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
@@ -60,8 +63,10 @@
             <version>${lombok.version}</version>
             <scope>provided</scope>
         </dependency>
+-->
     </dependencies>
 
+<!--
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -80,6 +85,7 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+-->
 
     <build>
         <plugins>
@@ -95,6 +101,21 @@
                         </path>
                     </annotationProcessorPaths>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>klewisjr.teams.bot.TeamsBotApplication</mainClass>
+                    <layout>JAR</layout>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
