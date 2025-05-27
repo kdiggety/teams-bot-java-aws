@@ -32,16 +32,34 @@
             <groupId>software.amazon.awssdk</groupId>
             <artifactId>cloudwatch</artifactId>
             <version>${aws.sdk.version}</version>
+	    <exclusions>
+	      <exclusion>
+	         <groupId>org.slf4j</groupId>
+	         <artifactId>slf4j-api</artifactId>
+	      </exclusion>
+	    </exclusions>
         </dependency>
         <dependency>
             <groupId>software.amazon.awssdk</groupId>
             <artifactId>cloudwatchlogs</artifactId>
             <version>${aws.sdk.version}</version>
+	    <exclusions>
+	      <exclusion>
+	         <groupId>org.slf4j</groupId>
+	         <artifactId>slf4j-api</artifactId>
+	      </exclusion>
+	    </exclusions>
         </dependency>
         <dependency>
             <groupId>software.amazon.awssdk</groupId>
             <artifactId>bedrockruntime</artifactId>
             <version>${aws.sdk.version}</version>
+	    <exclusions>
+	      <exclusion>
+	         <groupId>org.slf4j</groupId>
+	         <artifactId>slf4j-api</artifactId>
+	      </exclusion>
+	    </exclusions>
         </dependency>
 
         <!-- Jackson for JSON handling -->
@@ -64,13 +82,6 @@
 
     <dependencyManagement>
         <dependencies>
-            <dependency>
-                <groupId>software.amazon.awssdk</groupId>
-                <artifactId>bom</artifactId>
-                <version>${aws.sdk.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
@@ -95,6 +106,21 @@
                         </path>
                     </annotationProcessorPaths>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>klewisjr.teams.bot.TeamsBotApplication</mainClass>
+                    <layout>JAR</layout>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals> 
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
