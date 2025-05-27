@@ -1,6 +1,4 @@
 FROM openjdk:22-jdk
-WORKDIR /app
-COPY . /app
-RUN ./mvnw package -DskipTests
+COPY target/teams-bot-1.0-SNAPSHOT.jar app.jar
 EXPOSE 8080
-CMD ["java", "-jar", "target/*.jar"]
+CMD ["java", "-jar", "app.jar"]
