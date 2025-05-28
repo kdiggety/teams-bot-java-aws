@@ -1,13 +1,16 @@
 package klewisjr.teams.bot.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 
 @Data
 @Builder
-@RequiredArgsConstructor
+@NoArgsConstructor
+@AllArgsConstructor
 public class TeamsMessage {
-    private final String text;
-    private final String conversationId;
+    private String text;
+    private String conversationId;
 }
